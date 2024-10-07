@@ -33,7 +33,7 @@ theme_config:
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: false # show blog description in home page
 
-favicon: "logo.png"
+favicon: "https://img.itch.zone/aW1nLzE1NDQ5OTcwLmpwZw==/70x70%23/jruN6n.jpg"
 
 sass:
   style: compressed
