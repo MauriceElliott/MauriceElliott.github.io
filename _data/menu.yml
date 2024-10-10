@@ -10,16 +10,15 @@ entries:
         url: https://www.linkedin.com/in/mauriceelliott/
       - title: ItchIo
         url: https://baulers.itch.io
-
-  - title: CV
-    url: /cv
+      - title: CV
+        url: /cv
 
   - title: posts
     post_list:
       limit: 5
-      show_more: true
-      show_more_text: See archive...
-      show_more_url: archive.html
+      # show_more: true
+      # show_more_text: See archive...
+      # show_more_url: archive.html
 
   # - title: rss
   #   url: feed.xml
