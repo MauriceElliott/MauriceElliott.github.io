@@ -12,7 +12,7 @@ entries:
         url: https://baulers.itch.io
 
   - title: CV
-    url: cv.md
+    url: /cv.md
 
   - title: posts
     post_list:
