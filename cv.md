@@ -13,7 +13,7 @@ I am a skilled Software and DevOps engineer with over 11 years experience. I am 
 
 My main area of expertise is within the Microsoft stack, as I've spent a large amount of my career first developing .NET applications, and then supporting, building and deploying them, to now hosting, hardening and monitoring.
 
-In my personal time I am doing game development in a program called [Picotron](https://www.lexaloffle.com/picotron.php), which uses Lua as its main development language and can be seen on [my Github](https://github.com/MauriceElliott/gut_wound), but I am also in the process of learning the [Zig](https://ziglang.org) as systems programming/no garbage collected languages are an area I am interested in, but am woefully inexperienced in.
+In my personal time I am developing a game in a program called [Picotron](https://www.lexaloffle.com/picotron.php), which uses Lua as its main development language and can be seen on [my Github](https://github.com/MauriceElliott/gut_wound). I am also in the process of learning [Zig](https://ziglang.org) as systems programming/no garbage collected languages are an area I am interested in, but am woefully inexperienced in.
 
 ### DevOps Experience
 

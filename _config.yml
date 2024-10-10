@@ -1,15 +1,8 @@
 title: What does the end of the world sound like?
 author: Maurice Elliott
 baseurl: "/"
-description: >- # this means to ignore newlines until "baseurl:"
-  A question I have recently answered with a playlist
-  I listen every time I work on something.
-  I don't know why this question is always at the forefront
-  of my mind, maybe its a vie for control in a world I feel
-  powerless over.
-  Either way, it doesn't effect me in the way you might think,
-  it empowers me, rather than pulling me down.
-  I'm pretty happy with the sound the end of the world makes.
+description: >-
+  Hidden with my current setup.
 github_username: MauriceElliott
 # Build settings
 remote_theme: riggraz/no-style-please
@@ -17,7 +10,7 @@ theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
   back_home_text: "return" # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description in home page
+  show_description: false # show blog description in home page
 
 favicon: "logo.png"
 
