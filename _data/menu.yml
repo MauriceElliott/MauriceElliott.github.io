@@ -11,7 +11,7 @@ entries:
       - title: ItchIo
         url: https://baulers.itch.io
 
-  - title: all posts
+  - title: posts
     post_list:
       limit: 5
       show_more: true
