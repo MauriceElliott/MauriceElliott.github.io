@@ -2,7 +2,7 @@
 layout: post
 title: "Your pain is mine - Pain Synesthesia."
 date: 2024-10-16 23:51:00 +0100
-categories: fatherhood, mental-health
+categories: feels 
 ---
 
 Yesterday my son sustained a minor, but very painful injury to his hand and it made my entire body hurt. The feeling is referred to as pain synesthesia. It is an under researched area, so me saying this is most certainly self diagnosis, it was just the closest thing to what I felt that makes sense. I wanted to put my experience out there in case others find solace in the fact they are not alone.
