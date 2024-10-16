@@ -1,8 +1,7 @@
 title: Programmers Panacea
 author: Maurice Elliott
 baseurl: "/"
-description: >-
-  The personal website of a father and programmer.
+description: "The personal website of a father and programmer" 
 github_username: MauriceElliott
 # Build settings
 remote_theme: riggraz/no-style-please
