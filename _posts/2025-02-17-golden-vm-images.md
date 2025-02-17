@@ -1,4 +1,3 @@
-## Golden VM Images
 
 Gold is valuable, Gold is eternal, Gold is a sought, guarded and desired. Golden does not seem like the right word for what I'm about to describe, but it is often ascribed to this style of image preparation.
 
