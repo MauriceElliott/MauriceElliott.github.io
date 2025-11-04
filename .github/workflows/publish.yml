@@ -21,3 +21,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Output
           cname: codedawa.dev
+          force_orphan: true
