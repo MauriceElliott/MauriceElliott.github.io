@@ -19,6 +19,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Output
+          publish_dir: ./Build
           cname: codedawa.dev
           force_orphan: true
