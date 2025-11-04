@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Your pain is mine - Pain Synesthesia."
-date: 2024-10-16 23:51:00 +0100
+date: 2024-10-16 23:51
 categories: feels 
 ---
 
