@@ -25,6 +25,10 @@ struct ExampleSite: Site {
     var homePage = Home()
     var layout = MainLayout()
     
+    var staticPages: [any StaticPage] {
+        Blog()
+    }
+    
     var articlePages: [any ArticlePage] {
         ArticleLayout()
     }
