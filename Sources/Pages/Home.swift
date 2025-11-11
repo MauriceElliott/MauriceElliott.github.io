@@ -29,9 +29,5 @@ struct Home: StaticPage {
         Link("Welcome!", target: "/posts/2024-10-07-welcome/")
         Text("October 7, 2024")
             .foregroundStyle(.secondary)
-        
-        Link("View All Posts →", target: Blog())
-            .linkStyle(.button)
-            .margin(.top, 20)
     }
 }
