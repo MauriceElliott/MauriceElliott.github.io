@@ -20,6 +20,7 @@ struct ExampleSite: Site {
     var url = URL(static: "https://codedawa.dev")
     var builtInIconsEnabled = true
 
+    var darkTheme: (any Theme)? { CustomDarkTheme() }
     var author = "Maurice Elliott"
 
     var homePage = Home()
@@ -28,4 +29,24 @@ struct ExampleSite: Site {
     var articlePages: [any ArticlePage] {
         ArticleLayout()
     }
+}
+
+struct CustomDarkTheme: Theme {
+    var colorScheme: ColorScheme = .dark
+
+    var font: Font = Font(
+        name: "Annotation Mono",
+        source: "./../Assets/fonts/Regular.woff2"
+    )
+
+    var headingFont: Font = Font(
+        name: "Annotation Mono",
+        source: "./../Assets/fonts/Regular.woff2"
+    )
+
+    var monospaceFont: Font = Font(
+         name: "Annotation Mono",
+         source: "./../Assets/fonts/Regular.woff2"
+     )
+
 }

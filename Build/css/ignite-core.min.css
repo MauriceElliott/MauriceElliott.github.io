@@ -278,6 +278,14 @@ div.alert p:last-child {
 }
 
 
+@font-face {
+    font-family: 'Annotation Mono';
+    src: url('./../Assets/fonts/Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --bs-primary: rgb(13 110 253 / 100%);
     --bs-primary-rgb: 13, 110, 253;
@@ -338,6 +346,9 @@ div.alert p:last-child {
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-font-monospace: Annotation Mono;
+    --bs-body-font-family: Annotation Mono;
+    --bs-headings-font-family: Annotation Mono;
     --syntax-highlight-theme: "xcode-light";
 }
 
@@ -835,10 +846,13 @@ code, pre {
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-font-monospace: Annotation Mono;
+    --bs-body-font-family: Annotation Mono;
+    --bs-headings-font-family: Annotation Mono;
     --syntax-highlight-theme: "xcode-light";
 }
 
-[data-bs-theme="dark"] {
+[data-bs-theme="custom-dark-dark"] {
     --bs-primary: rgb(13 110 253 / 100%);
     --bs-primary-rgb: 13, 110, 253;
     --bs-primary-text-emphasis: rgb(109 168 253 / 100%);
@@ -899,6 +913,9 @@ code, pre {
     --bs-link-hover-color-rgb: 158, 197, 254;
     --bs-border-color: rgb(73 80 87 / 100%);
     --bs-border-color-rgb: 73, 80, 87;
+    --bs-font-monospace: Annotation Mono;
+    --bs-body-font-family: Annotation Mono;
+    --bs-headings-font-family: Annotation Mono;
     --syntax-highlight-theme: "xcode-dark";
 }
 
