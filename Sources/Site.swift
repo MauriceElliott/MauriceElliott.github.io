@@ -14,7 +14,7 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {    
+struct ExampleSite: Site {
     var name = "Codedawa"
     var titleSuffix = " – Code Dawa"
     var url = URL(static: "https://codedawa.dev")
@@ -22,6 +22,7 @@ struct ExampleSite: Site {
 
     var darkTheme: (any Theme)? { CustomDarkTheme() }
     var author = "Maurice Elliott"
+    var favicon = URL(static: "./../images/logo.png")
 
     var homePage = Home()
     var layout = MainLayout()
