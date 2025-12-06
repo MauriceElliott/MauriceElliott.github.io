@@ -280,7 +280,7 @@ div.alert p:last-child {
 
 @font-face {
     font-family: 'Annotation Mono';
-    src: url('./../Assets/fonts/Regular.woff2');
+    src: url('./../fonts/Regular.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

@@ -36,17 +36,17 @@ struct CustomDarkTheme: Theme {
 
     var font: Font = Font(
         name: "Annotation Mono",
-        source: "./../Assets/fonts/Regular.woff2"
+        source: "./../fonts/Regular.woff2"
     )
 
     var headingFont: Font = Font(
         name: "Annotation Mono",
-        source: "./../Assets/fonts/Regular.woff2"
+        source: "./../fonts/Regular.woff2"
     )
 
     var monospaceFont: Font = Font(
          name: "Annotation Mono",
-         source: "./../Assets/fonts/Regular.woff2"
+         source: "./../fonts/Regular.woff2"
      )
 
 }
