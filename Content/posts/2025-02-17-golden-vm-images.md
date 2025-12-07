@@ -10,7 +10,7 @@ I am here to tell you this doesn't need to be the case. We have transcended this
 ### Packer
 I'm sure you've heard of [HashiCorp](https://www.hashicorp.com/), but if not allow me to enlighten you. They are the company that makes Terraform, as well as Consul, and Vault. They also make the tool Packer, which is a configuration tool designed for defining and creating genericised VM images. Here's a code block from a configuration file I've been working on.
 
-```
+```hcl
   provisioner "shell" {
     script            = "./scripts/linux/software/restart.sh"
     valid_exit_codes  = [0]
@@ -30,7 +30,7 @@ The first block restarts the machine, then the second waits 30 seconds for the m
 
 Now that I've made the Github action runners install available within the image being prepared, when I go to set up a new runner I no longer have to wait for the download to complete before I can start the instantiation. We can do the same for many other tools, i.e. yq, jq, powershell, dotnet, sqlpackage, the azure or gcp cli, anything you can think of that would normally need to be installed when instantiating a new server can be put into the packer definition to reduce the spin up time of the VM instance, and give users a solid base to build their machine off of, without worrying about dependencies they might have missed and only including the ones that are critical to the work they are doing.
 
-```
+```hcl
   # What image is this image based off?
   image_publisher = "Canonical"
   image_offer     = "0001-com-ubuntu-server-jammy"
