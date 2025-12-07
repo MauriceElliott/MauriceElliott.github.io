@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://codedawa.dev/sitemap.xml

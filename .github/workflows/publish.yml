@@ -15,6 +15,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "5.9"
+
+      - name: Clone and Install Ignite
+        run: |
+          git clone https://github.com/twostraws/Ignite ignite-repo
+          cd ignite-repo
+          make install PREFIX_DIR=$GITHUB_WORKSPACE/ignite-install
+          echo "$GITHUB_WORKSPACE/ignite-install/bin" >> $GITHUB_PATH
+
+      - name: Build Site with Ignite
+        run: ignite build
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
