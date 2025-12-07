@@ -26,8 +26,10 @@ jobs:
         run: |
           git clone https://github.com/twostraws/Ignite ignite-repo
           cd ignite-repo
-          sudo make install PREFIX_DIR=$GITHUB_WORKSPACE/ignite-install
-          echo "$GITHUB_WORKSPACE/ignite-install/bin" >> $GITHUB_PATH
+          make build
+          mkdir -p $GITHUB_WORKSPACE/ignite-install
+          make install PREFIX_DIR=$GITHUB_WORKSPACE/ignite-install
+          echo "$GITHUB_WORKSPACE/ignite-install" >> $GITHUB_PATH
 
       - name: Build Site with Ignite
         run: ignite build
