@@ -4,7 +4,7 @@ import Ignite
 @main
 struct IgniteWebsite {
     static func main() async {
-        var site = ExampleSite()
+        var site = Codedawa()
 
         do {
             try await site.publish()
