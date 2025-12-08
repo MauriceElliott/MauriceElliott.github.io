@@ -14,7 +14,7 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {
+struct Codedawa: Site {
     var name = "Codedawa"
     var titleSuffix = " – Code Dawa"
     var url = URL(static: "https://codedawa.dev")
@@ -22,7 +22,7 @@ struct ExampleSite: Site {
 
     var darkTheme: (any Theme)? { CustomDarkTheme() }
     var author = "Maurice Elliott"
-    var favicon = URL(static: "./../images/logo.png")
+    var favicon = URL(static: "/images/logo.png")
 
     var homePage = Home()
     var layout = MainLayout()
@@ -37,12 +37,12 @@ struct CustomDarkTheme: Theme {
 
     var font: Font = Font(
         name: "Annotation Mono",
-        source: "./../fonts/Regular.woff2"
+        source: "./../fonts/DemiBold.woff2"
     )
 
     var headingFont: Font = Font(
         name: "Annotation Mono",
-        source: "./../fonts/Regular.woff2"
+        source: "./../fonts/DemiBold.woff2"
     )
 
     var monospaceFont: Font = Font(
