@@ -5,20 +5,6 @@ protocol BaseTheme: Theme {}
 extension BaseTheme {
 	var siteWidth: ResponsiveValues { .init(small: .px(770)) }
 
-	var font: Font = Font(
-        name: "Annotation Mono",
-        source: "./../fonts/DemiBold.woff2"
-    )
-
-    var headingFont: Font = Font(
-        name: "Annotation Mono",
-        source: "./../fonts/DemiBold.woff2"
-    )
-
-    var monospaceFont: Font = Font(
-         name: "Annotation Mono",
-         source: "./../fonts/Regular.woff2"
-     )
 	var codeBlockFontSize: LengthUnit { .px(16) }
     var inlineCodeFontSize: LengthUnit { .px(16) }
 
@@ -35,6 +21,21 @@ extension BaseTheme {
 }
 
 struct AutomataNight: BaseTheme {
+	var font: Font = Font(
+        name: "Annotation Mono",
+        source: "./../fonts/DemiBold.woff2"
+    )
+
+    var headingFont: Font = Font(
+        name: "Annotation Mono",
+        source: "./../fonts/DemiBold.woff2"
+    )
+
+    var monospaceFont: Font = Font(
+         name: "Annotation Mono",
+         source: "./../fonts/Regular.woff2"
+     )
+
     var colorScheme: ColorScheme = .dark
 
     var accent: Color { Color(hex: "#EBA123") } // yellow
@@ -49,6 +50,21 @@ struct AutomataNight: BaseTheme {
 }
 
 struct AutomataDay: BaseTheme {
+	var font: Font = Font(
+        name: "Annotation Mono",
+        source: "./../fonts/DemiBold.woff2"
+    )
+
+    var headingFont: Font = Font(
+        name: "Annotation Mono",
+        source: "./../fonts/DemiBold.woff2"
+    )
+
+    var monospaceFont: Font = Font(
+         name: "Annotation Mono",
+         source: "./../fonts/Regular.woff2"
+     )
+
     var colorScheme: ColorScheme = .light
 
     var accent: Color { Color(hex: "#B67F21") } // yellow
