@@ -22,7 +22,7 @@ struct Codedawa: Site {
 
     var darkTheme: (any Theme)? { CustomDarkTheme() }
     var author = "Maurice Elliott"
-    var favicon = URL(static: "/images/logo.png")
+    var favicon: URL? { URL(static: "/favicon/logo.png") }
 
     var homePage = Home()
     var layout = MainLayout()
