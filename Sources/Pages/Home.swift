@@ -13,7 +13,7 @@ struct Home: StaticPage {
             .foregroundStyle(.secondary)
             .margin(.bottom, 30)
         
-        Text("Latest Musings:")
+        Text("Posts ->")
             .font(.title2)
             .margin(.top, 20)
             .margin(.bottom, 10)
@@ -26,8 +26,8 @@ struct Home: StaticPage {
         Text("October 16, 2024")
             .foregroundStyle(.secondary)
         
-        Link("Welcome!", target: "/posts/2024-10-07-welcome/")
-        Text("October 7, 2024")
+        Link("I have no mouth, yet I must scream.", target: "/posts/2024-10-07-welcome/")
+        Text("December 7, 2025")
             .foregroundStyle(.secondary)
     }
 }
