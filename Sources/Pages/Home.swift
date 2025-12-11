@@ -24,7 +24,7 @@ struct Home: StaticPage {
         
         Link("I have no mouth, yet I must scream.", target: "/posts/2025-12-07-introduction")
             .foregroundStyle(.primary)
-            .font(.title3)
+            .font(.lead)
             .margin(.top, 20)
             .margin(.bottom, 10)
     }
