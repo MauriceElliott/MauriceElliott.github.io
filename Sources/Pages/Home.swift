@@ -5,7 +5,7 @@ struct Home: StaticPage {
     var title = "Codedawa"
 
     var body: some HTML {
-        Text("Code Dawa")
+        Text("CodeDawa")
             .font(.title1)
         
         Text("Code Dawa is the cure to my fractured sanity.")
@@ -13,16 +13,14 @@ struct Home: StaticPage {
             .foregroundStyle(.primary)
             .margin(.bottom, 30)
 
-        Link("Github", target: "https://github.com/MauriceElliott")
-            .font(.lead)
-            .foregroundStyle(.bodyEmphasis)
+        Link("Github Projects ->", target: "https://github.com/MauriceElliott")
+            .font(.title3)
+            .foregroundStyle(.secondary)
             .margin(.bottom, 30)
-            
-        Link("About Me ->", target: "/posts/2025-12-07-introduction")
-            .font(.title2)
+        
+        Link("I have no mouth, yet I must scream.", target: "/posts/2025-12-07-introduction")
+            .font(.title3)
             .margin(.top, 20)
             .margin(.bottom, 10)
-        Text("December 7, 2025")
-            .foregroundStyle(.secondary)
     }
 }
