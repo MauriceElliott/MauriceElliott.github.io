@@ -2,27 +2,36 @@ import Foundation
 import Ignite
 
 struct Home: StaticPage {
-    var title = "Codedawa"
+    var title = "Home"
 
     var body: some HTML {
         Text("CodeDawa")
             .font(.title1)
         
         Text("Code Dawa is the cure to my fractured sanity.")
-            .font(.lead)
+            .font(.body)
             .foregroundStyle(.primary)
             .margin(.bottom, 30)
+
+        Image("/favicon/logo_v5.png")
+            .frame(width: 300)
+            .margin(.bottom, 30)
+
+        Text("My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate.")
+            .font(.body)
+            .margin(.bottom, 100)
 
         Link("Github Projects ->", target: "https://github.com/MauriceElliott")
             .font(.lead)
             .foregroundStyle(.secondary)
             .margin(.bottom, 30)
+
         Text("Selection of my favourite github projects from the last few years.")
             .font(.body)
-            .foregroundStyle(.body)
+            .foregroundStyle(.secondary)
             .margin(.bottom, 30)
         
-        Link("I have no mouth, yet I must scream.", target: "/posts/2025-12-07-introduction")
+        Link("about.", target: "/introduction")
             .foregroundStyle(.primary)
             .font(.lead)
             .margin(.top, 20)
