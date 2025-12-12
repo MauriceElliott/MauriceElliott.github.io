@@ -22,17 +22,14 @@ struct Home: StaticPage {
             .font(.body)
             .margin(.bottom, 100)
 
-        Link("Github Projects ->", target: "https://github.com/MauriceElliott")
+        Link("Github", target: "https://github.com/MauriceElliott")
             .font(.lead)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.primary)
             .margin(.bottom, 30)
 
-        Text("Selection of my favourite github projects from the last few years.")
-            .font(.body)
-            .foregroundStyle(.secondary)
-            .margin(.bottom, 30)
-        
-        Link("about.", target: "/introduction")
+        Text("<br>")
+
+        Link("Introduction", target: "/introduction")
             .foregroundStyle(.primary)
             .font(.lead)
             .margin(.top, 20)
