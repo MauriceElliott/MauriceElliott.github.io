@@ -13,9 +13,10 @@ struct Home: StaticPage {
             .foregroundStyle(.primary)
             .margin(.bottom, 30)
 
-        Image("/favicon/logo_v5.png")
+        Image("/images/home_art.png", description: "pixel art of a computer, a keyboard, and a large cup of tea.")
             .frame(width: 300)
             .margin(.bottom, 30)
+            .class("float-end")
 
         Text("My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate.")
             .font(.body)
