@@ -22,19 +22,20 @@ extension BaseTheme {
 
 struct AutomataNight: BaseTheme {
 	var font: Font = Font(
-        name: "Annotation Mono",
-        source: "./../fonts/DemiBold.woff2"
+        name: "Departure Mono",
+        source: "./../fonts/DepartureMono-Regular.woff2"
     )
 
     var headingFont: Font = Font(
         name: "Annotation Mono",
-        source: "./../fonts/DemiBold.woff2"
+        source: "./../fonts/DepartureMono-Regular.woff2"
+
     )
 
     var monospaceFont: Font = Font(
-         name: "Annotation Mono",
-         source: "./../fonts/Regular.woff2"
-     )
+        name: "Annotation Mono",
+	    source: "./../fonts/DepartureMono-Regular.woff2"
+    )
 
     var colorScheme: ColorScheme = .dark
 
