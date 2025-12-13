@@ -5,9 +5,14 @@ struct Home: StaticPage {
     var title = "Home"
 
     var body: some HTML {
-        Text("CodeDawa")
+        Text("<br>")
+
+        Link("CodeDawa", target: "/")
+            .foregroundStyle(.white)
             .font(.title1)
-        
+
+        Text("<br>")
+
         Text("Code Dawa is the cure to my fractured sanity.")
             .font(.body)
             .foregroundStyle(.primary)
