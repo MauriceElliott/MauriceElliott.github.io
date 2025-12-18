@@ -3,7 +3,11 @@ import Ignite
 protocol BaseTheme: Theme {}
 
 extension BaseTheme {
-	var siteWidth: ResponsiveValues { .init(small: .px(770)) }
+	var siteWidth: ResponsiveValues {
+	    large: .px(700),
+        xLarge: .px(900),
+        xxLarge: .px(900)
+	}
 
 	var codeBlockFontSize: LengthUnit { .px(16) }
     var inlineCodeFontSize: LengthUnit { .px(16) }
@@ -21,6 +25,7 @@ extension BaseTheme {
 }
 
 struct AutomataNight: BaseTheme {
+	
 	var font: Font = Font(
         name: "Departure Mono",
         source: "./../fonts/DepartureMono-Regular.woff2"
@@ -37,7 +42,7 @@ struct AutomataNight: BaseTheme {
 	    source: "./../fonts/DepartureMono-Regular.woff2"
     )
 
-    var colorScheme: ColorScheme = .dark
+    let colorScheme: ColorScheme = .dark
 
     var accent: Color { Color(hex: "#EBA123") } // yellow
     var secondaryAccent: Color { Color(hex: "#6B997B") } // green
@@ -66,7 +71,7 @@ struct AutomataDay: BaseTheme {
          source: "./../fonts/Regular.woff2"
      )
 
-    var colorScheme: ColorScheme = .light
+    let colorScheme: ColorScheme = .light
 
     var accent: Color { Color(hex: "#B67F21") } // yellow
     var secondaryAccent: Color { Color(hex: "#732127") } // light-red
