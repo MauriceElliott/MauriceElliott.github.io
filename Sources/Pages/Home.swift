@@ -3,7 +3,24 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-
+    @Environment(\.themes) private var themes
+    private var themeSwitcher: some HTML {
+        VStack(alignment: .center) {
+            Section {
+                ForEach(themes) { theme in
+                    Button(theme.name.capitalized) {
+                        SwitchTheme(theme)
+                    }
+                    .role(.light)
+                    .margin(.horizontal, .xSmall)
+                }
+            }
+            .padding(.vertical, .small)
+        }
+        .position(.fixedBottom)
+        .background(.firebrick)
+        .frame(maxWidth: .percent(100%))
+    }
     var body: some HTML {
         Text("<br>")
 
@@ -40,5 +57,8 @@ struct Home: StaticPage {
             .font(.lead)
             .margin(.top, 20)
             .margin(.bottom, 10)
+
+
+        themeSwitcher
     }
 }

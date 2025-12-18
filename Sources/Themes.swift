@@ -4,9 +4,11 @@ protocol BaseTheme: Theme {}
 
 extension BaseTheme {
 	var siteWidth: ResponsiveValues {
-	    large: .px(700),
-        xLarge: .px(900),
-        xxLarge: .px(900)
+        .init(
+            large: .px(700),
+            xLarge: .px(900),
+            xxLarge: .px(900)
+        )
 	}
 
 	var codeBlockFontSize: LengthUnit { .px(16) }
