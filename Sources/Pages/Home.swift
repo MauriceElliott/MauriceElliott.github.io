@@ -30,7 +30,7 @@ struct Home: StaticPage {
 
         Text("<br>")
 
-        Text("Code Dawa is the cure to my self sabotage.")
+        Text("Code is code and Dawa is the cure.")
             .font(.body)
             .foregroundStyle(.primary)
             .margin(.bottom, 30)
@@ -40,7 +40,7 @@ struct Home: StaticPage {
             .margin(.bottom, 30)
             .class("float-end")
 
-        Text("My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate. This website is not a professional place, just somewhere I feel comfortable exposing a little of my inner being to the wider internet, in the hopes that it makes others feel normal in their own skin. At the same time it is for me mostly, and if I feel better after posting here, it has done its job.")
+        Text("My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate. This website is not a professional place, just somewhere I feel comfortable exposing a little of my inner being to the wider internet, in the hopes that it makes others feel normal in their own skin. At the same time it is for me mostly, and if I feel better after posting here, it has done its job. Dawa is arabic for medicine, or cure. My implication with that is I found the cure to my addictions through code. Although saying that, it was definitely more my son being in the world that cured me.")
             .font(.body)
             .margin(.bottom, 100)
 
