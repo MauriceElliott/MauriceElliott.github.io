@@ -30,13 +30,13 @@ struct Home: StaticPage {
 
         Text("<br>")
 
-        Text("Code is code and Dawa is the cure.")
+        Text("Code is code, Dawa is the cure.")
             .font(.body)
             .foregroundStyle(.primary)
             .margin(.bottom, 30)
 
         Image("/images/home_art.png", description: "pixel art of a computer, a keyboard, and a large cup of tea.")
-            .frame(width: 300)
+            .frame(width: 250)
             .margin(.bottom, 30)
             .class("float-end")
 
