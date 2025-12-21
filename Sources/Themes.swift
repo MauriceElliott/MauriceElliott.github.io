@@ -27,7 +27,7 @@ extension BaseTheme {
 }
 
 struct AutomataNight: BaseTheme {
-	
+	var name = "AutomataNight"
 	var font: Font = Font(
         name: "Departure Mono",
         source: "./../fonts/DepartureMono-Regular.woff2"
@@ -58,6 +58,7 @@ struct AutomataNight: BaseTheme {
 }
 
 struct AutomataDay: BaseTheme {
+	var name = "AutomataDay"
 	var font: Font = Font(
         name: "Annotation Mono",
         source: "./../fonts/DemiBold.woff2"
