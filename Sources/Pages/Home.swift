@@ -5,6 +5,7 @@ struct Home: StaticPage {
     var title = "Home"
     @Environment(\.themes) private var themes
     var body: some HTML {
+
         Text("<br>")
 
         Link("CodeDawa", target: "/")
@@ -28,9 +29,7 @@ struct Home: StaticPage {
                 ShowElement("ChangeToLight")
             }
             .id("ChangeToDark")
-        }
-        .hidden()
-  
+        }  
 
         Text("<br>")
 
