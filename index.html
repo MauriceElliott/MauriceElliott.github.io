@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Maurice Elliott" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>Home – Code Dawa</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://codedawa.dev/" rel="canonical" />
+    <link href="/favicon/logo.png" rel="icon" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Codedawa" />
+    <meta property="og:title" content="Home" />
+    <meta name="twitter:title" content="Home" />
+    <meta property="og:url" content="https://codedawa.dev/" />
+    <meta name="twitter:domain" content="codedawa.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <div class="ig-main-content">
+      <p><br /></p>
+      <a href="/" class="fs-1" style="color: rgb(255 255 255 / 100%)">CodeDawa</a>
+      <p><button type="button" id="ChangeToLight" class="btn" onclick="igniteSwitchTheme('automata-day-light');; document.getElementById('ChangeToLight').classList.add('d-none'); document.getElementById('ChangeToDark').classList.remove('d-none')">󰽢</button></p>
+      <p><button type="button" id="ChangeToDark" class="btn" onclick="igniteSwitchTheme('automata-night-dark');; document.getElementById('ChangeToDark').classList.add('d-none'); document.getElementById('ChangeToLight').classList.remove('d-none')"></button></p>
+      <p><br /></p>
+      <p class="text-primary" style="margin-bottom: 30px">Code is code, Dawa is the cure.</p>
+      <img src="/images/home_art.png" alt="pixel art of a computer, a keyboard, and a large cup of tea." class="float-end" style="width: 250px; margin-bottom: 30px" />
+      <p style="margin-bottom: 100px">My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate. This website is not a professional place, just somewhere I feel comfortable exposing a little of my inner being to the wider internet, in the hopes that it makes others feel normal in their own skin. At the same time it is for me mostly, and if I feel better after posting here, it has done its job. Dawa is arabic for medicine, or cure. My implication with that is I found the cure to my addictions through code. Although saying that, it was definitely more my son being in the world that cured me. At least it keeps me sane.</p>
+      <a href="https://github.com/MauriceElliott" class="text-primary lead" style="margin-top: 20px; margin-bottom: 10px">Github</a>
+      <p><br /></p>
+      <a href="/introduction" class="text-primary lead" style="margin-top: 20px; margin-bottom: 10px">Introduction</a>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>
